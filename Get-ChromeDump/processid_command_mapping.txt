@@ -1,0 +1,1562 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\Empire-master\Empire-master\data\module_source\collection\Get-ChromeDump.ps1";Get-ChromeDump -OutFile "$env:HOMEPATH\chromepwds.txt"} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Get-ChromeDump]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [\Users\puma-4\chromepwds.txt] to parameter [OutFile]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: \Users\puma-4\chromepwds.txt
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [\Users\puma-4\chromepwds.txt] to param [OutFile] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-ChromeDump]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-ChromeDump]
+Time-Tracker 2023-07-18 01:38:44
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:44
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:44
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:45
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:45
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security] to parameter [AssemblyName]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter AssemblyName: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [AssemblyName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-18 01:38:45
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:45
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:45
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:46
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:46
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[+]System.Data.SQLite.dll will be written to disk] to 
+parameter [Message]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [[+]System.Data.SQLite.dll will be written to disk] to 
+param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-18 01:38:47
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:47
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:47
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:48
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:48
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-18 01:38:49
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Test-Path]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Test-Path]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\Users\puma-4\AppData\Local\System.Data.SQLite.dll] to 
+parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND cmd line args to DYNAMIC parameters.
+DEBUG: ParameterBinding Information: 0 :         DYNAMIC parameter object: 
+[Microsoft.PowerShell.Commands.FileSystemItemProviderDynamicParameters]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Test-Path]
+Time-Tracker 2023-07-18 01:38:49
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:49
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:49
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:50
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:51
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[+]Assembly for SQLite written to 
+C:\Users\puma-4\AppData\Local\System.Data.SQLite.dll] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [[+]Assembly for SQLite written to 
+C:\Users\puma-4\AppData\Local\System.Data.SQLite.dll] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-18 01:38:51
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:51
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:51
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:52
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:52
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\Users\puma-4\AppData\Local\System.Data.SQLite.dll] to 
+parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-18 01:38:52
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2704 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:52
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:52
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:53
+
+*RESUMED the spwaned-powershell-process 2704
+
+Time-Tracker 2023-07-18 01:38:53
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-Process]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-Process]
+Time-Tracker 2023-07-18 01:38:53
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [FilterScript] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :         BIND arg [$_.Name -like "*chrome*"] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [$_.Name -like "*chrome*"] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (ApplicationFrameHost)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (ApplicationFrameHost)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (audiodg)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (audiodg)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (cmd)] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (cmd)] to param [InputObject]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (conhost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (conhost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (csrss)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (csrss)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (csrss)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (csrss)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (ctfmon)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (ctfmon)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (dasHost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (dasHost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (dllhost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (dllhost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (dwm)] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (dwm)] to param [InputObject]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (explorer)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (explorer)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:56
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (fontdrvhost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (fontdrvhost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:57
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (fontdrvhost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (fontdrvhost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:57
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (HxTsr)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (HxTsr)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:57
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (Idle)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (Idle)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:57
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (lsass)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (lsass)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:57
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (Memory Compression)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (Memory Compression)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (MsMpEng)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (MsMpEng)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (PhoneExperienceHost)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (PhoneExperienceHost)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (powershell)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (powershell)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (python3.10)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (python3.10)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (pythonw)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (pythonw)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (Registry)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (Registry)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (RuntimeBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (RuntimeBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (RuntimeBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (RuntimeBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (RuntimeBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (RuntimeBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (RuntimeBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (RuntimeBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (RuntimeBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (RuntimeBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:38:59
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SearchApp)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SearchApp)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:00
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SearchFilterHost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SearchFilterHost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:00
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SearchIndexer)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SearchIndexer)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:00
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SearchProtocolHost)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SearchProtocolHost)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:00
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SecurityHealthService)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SecurityHealthService)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:00
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SecurityHealthSystray)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SecurityHealthSystray)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (services)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (services)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SgrmBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SgrmBroker)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (ShellExperienceHost)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (ShellExperienceHost)] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (sihost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (sihost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (smartscreen)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (smartscreen)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (smss)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (smss)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (spoolsv)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (spoolsv)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (sshd)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (sshd)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (StartMenuExperienceHost)] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (StartMenuExperienceHost)] to
+ param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:02
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:03
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:03
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:03
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:03
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:03
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:06
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:07
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:07
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:07
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:07
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:07
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:08
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:08
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:08
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:08
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:08
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:09
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:10
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:10
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:10
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:10
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:10
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:11
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:12
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:13
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:13
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:13
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:13
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:13
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:14
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:14
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:14
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:14
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:14
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:15
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (svchost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (svchost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (System)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (System)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:16
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (SystemSettings)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (SystemSettings)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:17
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (taskhostw)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (taskhostw)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:17
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (TextInputHost)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (TextInputHost)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:17
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (uhssvc)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (uhssvc)] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-18 01:39:17
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Diagnostics.Process]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Diagnostics.Process (UserOOBEBroker)] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Diagnostics.Process (UserOOBEBroker)] to param 
+[InputObject] SUCCESSFUL
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised
