@@ -1,0 +1,8 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {C:\Users\puma-4\Downloads\Malware_Bazaar\Malware_Bazaar\23ec97b573fa3a2ff88e5689622b8b3b5406e09e77861c50665fd01067e2717e.ps1} -PSHost;
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+spawned_psh_process -- Timed-out after waiting 7200 s

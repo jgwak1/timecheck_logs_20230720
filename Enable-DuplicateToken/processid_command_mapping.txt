@@ -1,0 +1,266 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\nishang-master\nishang-master\Escalation\Enable-DuplicateToken.ps1"; Enable-DuplicateToken;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Enable-DuplicateToken]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Enable-DuplicateToken]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Enable-DuplicateToken]
+Time-Tracker 2023-07-17 17:59:25
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4652 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:25
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:25
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:26
+
+*RESUMED the spwaned-powershell-process 4652
+
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Security.Principal.WindowsPrincipal] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Security.Principal.WindowsPrincipal] to param [TypeName]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security.Principal.WindowsIdentity] to parameter 
+[ArgumentList]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter ArgumentList: argument type 
+[WindowsIdentity], parameter type [System.Object[]], collection type Array, element type [System.Object], no 
+coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type WindowsIdentity is not IList, treating this as 
+scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type WindowsIdentity to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 17:59:27
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4652 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:27
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:27
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:28
+
+*RESUMED the spwaned-powershell-process 4652
+
+Time-Tracker 2023-07-17 17:59:28
+DEBUG: ParameterBinding Information: 0 :         BIND arg [    [StructLayout(LayoutKind.Sequential, Pack = 1)] 
+     public struct TokPriv1Luid 
+     { 
+         public int Count; 
+         public long Luid; 
+         public int Attr; 
+     } 
+ 
+    public const int SE_PRIVILEGE_ENABLED = 0x00000002; 
+    public const int TOKEN_QUERY = 0x00000008; 
+    public const int TOKEN_ADJUST_PRIVILEGES = 0x00000020; 
+    public const UInt32 STANDARD_RIGHTS_REQUIRED = 0x000F0000; 
+ 
+    public const UInt32 STANDARD_RIGHTS_READ = 0x00020000; 
+    public const UInt32 TOKEN_ASSIGN_PRIMARY = 0x0001; 
+    public const UInt32 TOKEN_DUPLICATE = 0x0002; 
+    public const UInt32 TOKEN_IMPERSONATE = 0x0004; 
+    public const UInt32 TOKEN_QUERY_SOURCE = 0x0010; 
+    public const UInt32 TOKEN_ADJUST_GROUPS = 0x0040; 
+    public const UInt32 TOKEN_ADJUST_DEFAULT = 0x0080; 
+    public const UInt32 TOKEN_ADJUST_SESSIONID = 0x0100; 
+    public const UInt32 TOKEN_READ = (STANDARD_RIGHTS_READ | TOKEN_QUERY); 
+    public const UInt32 TOKEN_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED | TOKEN_ASSIGN_PRIMARY | 
+      TOKEN_DUPLICATE | TOKEN_IMPERSONATE | TOKEN_QUERY | TOKEN_QUERY_SOURCE | 
+      TOKEN_ADJUST_PRIVILEGES | TOKEN_ADJUST_GROUPS | TOKEN_ADJUST_DEFAULT | 
+      TOKEN_ADJUST_SESSIONID); 
+ 
+    public const string SE_TIME_ZONE_NAMETEXT = "SeTimeZonePrivilege"; 
+    public const int ANYSIZE_ARRAY = 1; 
+ 
+    [StructLayout(LayoutKind.Sequential)] 
+    public struct LUID 
+    { 
+      public UInt32 LowPart; 
+      public UInt32 HighPart; 
+    } 
+ 
+    [StructLayout(LayoutKind.Sequential)] 
+    public struct LUID_AND_ATTRIBUTES { 
+       public LUID Luid; 
+       public UInt32 Attributes; 
+    } 
+ 
+ 
+    public struct TOKEN_PRIVILEGES { 
+      public UInt32 PrivilegeCount; 
+      [MarshalAs(UnmanagedType.ByValArray, SizeConst=ANYSIZE_ARRAY)] 
+      public LUID_AND_ATTRIBUTES [] Privileges; 
+    } 
+ 
+    [DllImport("advapi32.dll", SetLastError=true)] 
+     public extern static bool DuplicateToken(IntPtr ExistingTokenHandle, int 
+        SECURITY_IMPERSONATION_LEVEL, out IntPtr DuplicateTokenHandle); 
+ 
+ 
+    [DllImport("advapi32.dll", SetLastError=true)] 
+    [return: MarshalAs(UnmanagedType.Bool)] 
+    public static extern bool SetThreadToken( 
+      IntPtr PHThread, 
+      IntPtr Token 
+    ); 
+ 
+    [DllImport("advapi32.dll", SetLastError=true)] 
+     [return: MarshalAs(UnmanagedType.Bool)] 
+      public static extern bool OpenProcessToken(IntPtr ProcessHandle,  
+       UInt32 DesiredAccess, out IntPtr TokenHandle); 
+ 
+    [DllImport("advapi32.dll", SetLastError = true)] 
+    public static extern bool LookupPrivilegeValue(string host, string name, ref long pluid); 
+ 
+    [DllImport("kernel32.dll", ExactSpelling = true)] 
+    public static extern IntPtr GetCurrentProcess(); 
+ 
+    [DllImport("advapi32.dll", ExactSpelling = true, SetLastError = true)] 
+     public static extern bool AdjustTokenPrivileges(IntPtr htok, bool disall, 
+     ref TokPriv1Luid newst, int len, IntPtr prev, IntPtr relen); ] to parameter [MemberDefinition]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter MemberDefinition: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [MemberDefinition] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [AdjPriv] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [AdjPriv] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [AdjPriv] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [AdjPriv] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-17 17:59:30
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4652 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:30
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:30
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:31
+
+*RESUMED the spwaned-powershell-process 4652
+
+Time-Tracker 2023-07-17 17:59:31
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [AdjPriv.AdjPriv+TokPriv1Luid] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [AdjPriv.AdjPriv+TokPriv1Luid] to param [TypeName] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 17:59:34
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4652 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:34
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:34
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:35
+
+*RESUMED the spwaned-powershell-process 4652
+
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [AdjPriv.AdjPriv+TOKEN_PRIVILEGES] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [AdjPriv.AdjPriv+TOKEN_PRIVILEGES] to param [TypeName] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4652 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:35
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:35
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:36
+
+*RESUMED the spwaned-powershell-process 4652
+
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

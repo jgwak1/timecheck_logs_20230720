@@ -1,0 +1,7 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {C:\Users\puma-4\Downloads\Powershellery-master\Powershellery-master\Brainstorming\Exfil\Exfil-Dns.ps1} -PSHost;
+PS C:\WINDOWS\system32> spawned_psh_process -- Ended before 1 hr ; with NO exception raised
