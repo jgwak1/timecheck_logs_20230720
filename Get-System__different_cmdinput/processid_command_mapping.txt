@@ -1,0 +1,43 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PowerSploit-master\PowerSploit-master\Privesc\Get-System.ps1";Get-System -WhoAmI;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Get-System]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [True] to parameter [WhoAmI]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: True
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to param [WhoAmI] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-System]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-System]
+Time-Tracker 2023-07-17 17:59:24
+DEBUG: ParameterBinding Information: 0 :     BIND arg [NamedPipe] to parameter [Technique]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: NamedPipe
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [NamedPipe] to param [Technique] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [TestSVC] to parameter [ServiceName]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: TestSVC
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [TestSVC] to param [ServiceName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [TestSVC] to parameter [PipeName]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: TestSVC
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [TestSVC] to param [PipeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [RevToSelf]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

@@ -1,0 +1,2101 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PoshC2-master\PoshC2-master\resources\modules\Get-UserInfo.ps1";Get-UserInfo;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-17 18:00:35
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [win32_operatingsystem] to parameter [Class]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [win32_operatingsystem] to param [Class] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:00:38
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Select-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Select-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Select-Object]
+Time-Tracker 2023-07-17 18:00:38
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Select-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = 
+[System.Management.ManagementObject#root\cimv2\Win32_OperatingSystem]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [\\DESKTOP-9LD827I\root\cimv2:Win32_OperatingSystem=@] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [\\DESKTOP-9LD827I\root\cimv2:Win32_OperatingSystem=@] to
+ param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Select-Object]
+Time-Tracker 2023-07-17 18:00:39
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:41
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:41
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:42
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:42
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Select * from Win32_UserAccount Where LocalAccount = True] to 
+parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Select * from Win32_UserAccount Where LocalAccount = True] 
+to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:00:42
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:42
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:42
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:43
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:43
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:43
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:44
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:44
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:45
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:45
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:45
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:46
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:47
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:47
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:48
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:49
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:49
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:49
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:50
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:50
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_Group Where LocalAccount = True] to 
+parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_Group Where LocalAccount = True] to 
+param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:00:50
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:50
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:50
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:51
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:51
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:51
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:51
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:51
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:52
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:52
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:53
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:53
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:53
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:54
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:54
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:55
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:55
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:55
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:56
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:56
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:57
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:57
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:57
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:58
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:58
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Win32_ComputerSystem] to parameter [Class]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Win32_ComputerSystem] to param [Class] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:00:58
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:58
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:58
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:59
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:00:59
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:00:59
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:00
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:00
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:01
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:01
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:01
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:01
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:01
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:02
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:02
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:03
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:03
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:03
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:04
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:04
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:05
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:05
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:05
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:06
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:06
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Access Control Assistance Operators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Access Control Assistance Operators'"] to param [Query] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:06
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:06
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:06
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:07
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:07
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Administrators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Administrators'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:07
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:07
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:07
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:08
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:08
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:09
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:09
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:09
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:10
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:10
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:11
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:11
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:11
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:12
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:12
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:12
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:12
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:12
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:13
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:13
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type Object[] to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Object[] to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:14
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:14
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:14
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:15
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:15
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Backup Operators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Backup Operators'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:15
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:15
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:15
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:16
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:16
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Cryptographic Operators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Cryptographic Operators'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:16
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:17
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:17
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:18
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:18
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Device Owners'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Device Owners'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:18
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:18
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:18
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:19
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:19
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Distributed COM Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Distributed COM Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:19
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:19
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:19
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:20
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:20
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Event Log Readers'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Event Log Readers'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:20
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:20
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:20
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:21
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:21
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Guests'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Guests'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:22
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:22
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:22
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:23
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:23
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:23
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:23
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:23
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:24
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:24
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:25
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:25
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:25
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:26
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:26
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:27
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:27
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:27
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:28
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:28
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type Object[] to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Object[] to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:29
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:29
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:29
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:30
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:30
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Hyper-V Administrators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Hyper-V Administrators'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:30
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:30
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:30
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:31
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:31
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='IIS_IUSRS'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='IIS_IUSRS'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:31
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:31
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:31
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:32
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:32
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:33
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:33
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:33
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:34
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:34
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:35
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:35
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:35
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:36
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:36
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:36
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:36
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:36
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:37
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:37
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type Object[] to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Object[] to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:38
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:38
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:38
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:39
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:39
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Network Configuration Operators'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Network Configuration Operators'"] to param [Query] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:39
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:40
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:40
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:41
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:41
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Performance Log Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Performance Log Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:41
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:41
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:41
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:42
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:42
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:43
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:43
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:43
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:44
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:44
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:44
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:44
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:44
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:45
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:45
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:46
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:46
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:46
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:47
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:47
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type Object[] to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Object[] to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:48
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:48
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:48
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:49
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:49
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Performance Monitor Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Performance Monitor Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:49
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:49
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:49
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:50
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:50
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Power Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Power Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:50
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:50
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:50
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:51
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:51
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Remote Desktop Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Remote Desktop Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:51
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:51
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:51
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:52
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:52
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Remote Management Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Remote Management Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:53
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:53
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:53
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:54
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:54
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Replicator'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Replicator'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:54
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:54
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:54
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:55
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:55
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='System Managed Accounts Group'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='System Managed Accounts Group'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:01:55
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:55
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:55
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:56
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:56
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:57
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:57
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:57
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:58
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:58
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:01:58
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:01:58
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:01:58
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:59
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:01:59
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:02:00
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:02:00
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:02:00
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:02:01
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:02:01
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type Object[] to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Object[] to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:02:02
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:02:02
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:02:02
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:02:03
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:02:03
+DEBUG: ParameterBinding Information: 0 :     BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Users'"] to parameter [Query]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [SELECT * FROM Win32_GroupUser WHERE 
+GroupComponent="Win32_Group.Domain='DESKTOP-9LD827I',Name='Users'"] to param [Query] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 18:02:03
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:02:03
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:02:03
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:02:04
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:02:04
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :                 The parameter is of type 
+[System.Management.Automation.PSObject] and the argument is an PSObject, so the parameter value is the argument value 
+wrapped into an PSObject.
+DEBUG: ParameterBinding Information: 0 :             Adding element of type PSObject to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSObject[]] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Output]
+Time-Tracker 2023-07-17 18:02:04
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2928 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:02:05
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:02:05
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:02:06
+
+*RESUMED the spwaned-powershell-process 2928
+
+Time-Tracker 2023-07-17 18:02:06
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Output]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: [InputObject]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSObject[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Collections.Generic.List`1[System.Object] to System.Management.Automation.PSObject[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter InputObject: argument type [List`1], 
+parameter type [System.Management.Automation.PSObject[]], collection type Array, element type 
+[System.Management.Automation.PSObject], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type 
+[System.Management.Automation.PSObject] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type System.Collections.Generic.List`1[System.Object] is 
+IList
+DEBUG: ParameterBinding Information: 0 :             COERCE collection element from type String to type 
+System.Management.Automation.PSObject
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSObject]
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

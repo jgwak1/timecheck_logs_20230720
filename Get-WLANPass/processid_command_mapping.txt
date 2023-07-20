@@ -1,0 +1,72 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PoshC2-master\PoshC2-master\resources\modules\Get-WLANPass.ps1";Get-WLANPass;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [\:(.+)$] to parameter [Pattern]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Pattern: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [Pattern] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Select-String]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [$name=$_.Matches.Groups[1].Value.Trim(); $_] to parameter 
+[Process]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Process: argument type [ScriptBlock], 
+parameter type [System.Management.Automation.ScriptBlock[]], collection type Array, element type 
+[System.Management.Automation.ScriptBlock], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type 
+[System.Management.Automation.ScriptBlock] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.ScriptBlock[]] to param 
+[Process] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [ForEach-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [(netsh wlan show profile name="$name" key=clear)] to parameter 
+[Process]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Process: argument type [ScriptBlock], 
+parameter type [System.Management.Automation.ScriptBlock[]], collection type Array, element type 
+[System.Management.Automation.ScriptBlock], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type 
+[System.Management.Automation.ScriptBlock] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.ScriptBlock[]] to param 
+[Process] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [ForEach-Object]
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Key Content\W+\:(.+)$] to parameter [Pattern]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Pattern: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [Pattern] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Select-String]
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [$pass=$_.Matches.Groups[1].Value.Trim(); $_] to parameter 
+[Process]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Process: argument type [ScriptBlock], 
+parameter type [System.Management.Automation.ScriptBlock[]], collection type Array, element type 
+[System.Management.Automation.ScriptBlock], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type 
+[System.Management.Automation.ScriptBlock] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.ScriptBlock[]] to param 
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

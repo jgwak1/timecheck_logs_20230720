@@ -1,0 +1,305 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PowerShell-Scripts\Obfusacte-PowershellScripts\Inveigh.ps1"; Invoke-Inveigh -Inspect;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Invoke-Inveigh]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Invoke-Inveigh]
+DEBUG: ParameterBinding Information: 0 : BIND REMAININGARGUMENTS cmd line args to param: 
+[e931bd909e564a0e8ba4c9d3d19d8938]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.Generic.List`1[System.Object]] to parameter 
+[e931bd909e564a0e8ba4c9d3d19d8938]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to param 
+[e931bd909e564a0e8ba4c9d3d19d8938] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Invoke-Inveigh]
+Time-Tracker 2023-07-17 18:04:35
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [a9712376a14345acb0046b599ac35510]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [a9712376a14345acb0046b599ac35510] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [e55cd4a3edc2409f9544ab260c7793e4]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [e55cd4a3edc2409f9544ab260c7793e4] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [b8a133e08e4b4881a9cfa933aa78c19b]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [b8a133e08e4b4881a9cfa933aa78c19b] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [dcac5669feaa43bda9605b66542e90eb]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [dcac5669feaa43bda9605b66542e90eb] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [e02740c242b24642905a7b9f9b2a7776]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [e02740c242b24642905a7b9f9b2a7776] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [a1317be5b5a3449d9e91b8ec5e3d7e56]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [a1317be5b5a3449d9e91b8ec5e3d7e56] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [d8e92100d54447b7b088ed5415a01d86]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [d8e92100d54447b7b088ed5415a01d86] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [b2eefd58abcb4861a36bf6a0ff6b0a34]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [b2eefd58abcb4861a36bf6a0ff6b0a34] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [c3b26ee965da47e58a0097be89c14dd4]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [c3b26ee965da47e58a0097be89c14dd4] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [bfdcf2949399434cbe1dbd7d868dc314]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [bfdcf2949399434cbe1dbd7d868dc314] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [d4dc92f8b9e04a91be5eb7099818dc83]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [d4dc92f8b9e04a91be5eb7099818dc83] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [af68946a97ec4589b2fac87862a490ac]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [af68946a97ec4589b2fac87862a490ac] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [N] to parameter [db77efe80dee43d796b1ffc2102b7549]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: N
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [N] to param [db77efe80dee43d796b1ffc2102b7549] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Y] to parameter [d13b898c18954d6ba46625e1ae98c5ee]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Y
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Y] to param [d13b898c18954d6ba46625e1ae98c5ee] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [0] to parameter [aba1f06cc6764377a7b6ab2ceccdaec9]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 0
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [0] to param [aba1f06cc6764377a7b6ab2ceccdaec9] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [NTLM] to parameter [edc4d2f44c8e4e63b7b00dfe56110aca]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: NTLM
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [NTLM] to param [edc4d2f44c8e4e63b7b00dfe56110aca] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [NTLM] to parameter [e0502cdf78554c8c80746316292c02fb]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: NTLM
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [NTLM] to param [e0502cdf78554c8c80746316292c02fb] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [c9cd43846ba641a4bd0d1bdc810d0f50]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [c9cd43846ba641a4bd0d1bdc810d0f50]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [abd19e74908a450e847564f92e2000eb]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [abd19e74908a450e847564f92e2000eb] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [cd4629bb22504e88a1343d2e9edd39ef]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [cd4629bb22504e88a1343d2e9edd39ef] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [a92483ab142f4ed2ba1088d321e8e51f]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [a92483ab142f4ed2ba1088d321e8e51f] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [c528a2182bb047f79bcfe29c2916df12]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [c528a2182bb047f79bcfe29c2916df12] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [bd55bad8d04f4ca6bcf3dcf5ccc64450]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [bd55bad8d04f4ca6bcf3dcf5ccc64450] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [d3d61740e8344c5bac50eef0abaaac1e]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [d3d61740e8344c5bac50eef0abaaac1e] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [b7f8429563d14b3f96fff20409dd76ec]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [b7f8429563d14b3f96fff20409dd76ec] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [d70c9d958dd44a10be0c532f517e3ef9]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [d70c9d958dd44a10be0c532f517e3ef9]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [a73d854ec3594cb5ac43e5562413d1c1]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [a73d854ec3594cb5ac43e5562413d1c1]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [bd1d14dc52ab4d71ab33f77ef0ab851a]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [bd1d14dc52ab4d71ab33f77ef0ab851a]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ab5c9a3797aa40cf86faf228516f1393]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [ab5c9a3797aa40cf86faf228516f1393]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [a85dc65b1229497dbdd4fc6a88a3775c]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [a85dc65b1229497dbdd4fc6a88a3775c]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [b7db70e89e0a475da76fbc5ffcd7b001]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Array]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [b7db70e89e0a475da76fbc5ffcd7b001]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [30] to parameter [dee7bdc3a9b748e894d764b79a5e7e1c]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 30
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [30] to param [dee7bdc3a9b748e894d764b79a5e7e1c] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [165] to parameter [e6e42c54e98044ba98fdf24d79b5f9ee]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 165
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [165] to param [e6e42c54e98044ba98fdf24d79b5f9ee] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [c9a4135aa8c04921b380d6390d87f594]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 0
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [0] to param [c9a4135aa8c04921b380d6390d87f594] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [e1ee1c6aeb484ee2af1947e459200566]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 0
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [0] to param [e1ee1c6aeb484ee2af1947e459200566] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [e6abfec0dea646f69b1a2c989ebdcdbb]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 0
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [0] to param [e6abfec0dea646f69b1a2c989ebdcdbb] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [IIS] to parameter [aee1694b16de43f98158814241da1ee1]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: IIS
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [IIS] to param [aee1694b16de43f98158814241da1ee1] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ec7a5c6fb4274258a6453827d5fed342]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ec7a5c6fb4274258a6453827d5fed342] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [d20b2d2f2ef14e248b8925537c31c224]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [d20b2d2f2ef14e248b8925537c31c224] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [a462c15526384fd8bc3d9987e501370b]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

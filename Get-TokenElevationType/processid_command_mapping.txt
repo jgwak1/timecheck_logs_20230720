@@ -1,0 +1,761 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PoshC2-master\PoshC2-master\resources\modules\Get-TokenElevationType.ps1";Get-TokenElevationType;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [FilterScript] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.gettypes() -match 'UacPoll' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.gettypes() -match 'UacPoll' ] to param [Property] 
+SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:42
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [mscorlib, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [mscorlib, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:43
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.ConsoleHost, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.ConsoleHost, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:43
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:43
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Core, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Core, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:44
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Management.Automation, Version=3.0.0.0, Culture=neutral, 
+PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:44
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.Management.Infrastructure, Version=1.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.Management.Infrastructure, Version=1.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Management, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.DirectoryServices, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.DirectoryServices, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Xml, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Xml, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Numerics, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Numerics, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Data, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Data, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Configuration, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Configuration, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.Emit.InternalAssemblyBuilder]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, 
+Culture=neutral, PublicKeyToken=null] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0,
+ Culture=neutral, PublicKeyToken=null] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.Security, Version=3.0.0.0, Culture=neutral,
+ PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.Security, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Transactions, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Transactions, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.Powershell.PSReadline, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.Powershell.PSReadline, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Configuration.Install, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Configuration.Install, Version=4.0.0.0, 
+Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4328 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:48
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:48
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:49
+
+*RESUMED the spwaned-powershell-process 4328
+
+Time-Tracker 2023-07-17 18:00:49
+DEBUG: ParameterBinding Information: 0 :     BIND arg [using Microsoft.Win32;
+
+using System;
+
+using System.Diagnostics;
+
+using System.Runtime.InteropServices;
+
+using System.Security.Principal;
+
+
+
+public static class UacPoll
+
+{
+
+    private const string uacRegistryKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+
+    private const string uacRegistryValue = "EnableLUA";
+
+
+
+    private static uint STANDARD_RIGHTS_READ = 0x00020000;
+
+    private static uint TOKEN_QUERY = 0x0008;
+
+    private static uint TOKEN_READ = (STANDARD_RIGHTS_READ | TOKEN_QUERY);
+
+
+
+    [DllImport("advapi32.dll", SetLastError = true)]
+
+    [return: MarshalAs(UnmanagedType.Bool)]
+
+    static extern bool OpenProcessToken(IntPtr ProcessHandle, UInt32 DesiredAccess, out IntPtr TokenHandle);
+
+
+
+    [DllImport("advapi32.dll", SetLastError = true)]
+
+    public static extern bool GetTokenInformation(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, 
+IntPtr TokenInformation, uint TokenInformationLength, out uint ReturnLength);
+
+
+
+    public enum TOKEN_INFORMATION_CLASS
+
+    {
+
+        TokenUser = 1,
+
+        TokenGroups,
+
+        TokenPrivileges,
+
+        TokenOwner,
+
+        TokenPrimaryGroup,
+
+        TokenDefaultDacl,
+
+        TokenSource,
+
+        TokenType,
+
+        TokenImpersonationLevel,
+
+        TokenStatistics,
+
+        TokenRestrictedSids,
+
+        TokenSessionId,
+
+        TokenGroupsAndPrivileges,
+
+        TokenSessionReference,
+
+        TokenSandBoxInert,
+
+        TokenAuditPolicy,
+
+        TokenOrigin,
+
+        TokenElevationType,
+
+        TokenLinkedToken,
+
+        TokenElevation,
+
+        TokenHasRestrictions,
+
+        TokenAccessInformation,
+
+        TokenVirtualizationAllowed,
+
+        TokenVirtualizationEnabled,
+
+        TokenIntegrityLevel,
+
+        TokenUIAccess,
+
+        TokenMandatoryPolicy,
+
+        TokenLogonSid,
+
+        MaxTokenInfoClass
+
+    }
+
+
+
+    public enum TOKEN_ELEVATION_TYPE
+
+    {
+
+        TokenElevationTypeDefault = 1,
+
+        TokenElevationTypeFull,
+
+        TokenElevationTypeLimited
+
+    }
+
+
+
+    public static bool IsUacEnabled
+
+    {
+
+        get
+
+        {
+
+            RegistryKey uacKey = Registry.LocalMachine.OpenSubKey(uacRegistryKey, false);
+
+            bool result = uacKey.GetValue(uacRegistryValue).Equals(1);
+
+            return result;
+
+        }
+
+    }
+
+
+
+    public static string IsProcessElevated()
+
+    {
+
+        if (IsUacEnabled)
+
+            {
+
+                IntPtr tokenHandle;
+
+                if (!OpenProcessToken(Process.GetCurrentProcess().Handle, TOKEN_READ, out tokenHandle))
+
+                {
+
+                    throw new ApplicationException("Could not get process token.  Win32 Error Code: " + 
+Marshal.GetLastWin32Error());
+
+                }
+
+
+
+                TOKEN_ELEVATION_TYPE elevationResult = TOKEN_ELEVATION_TYPE.TokenElevationTypeDefault;
+
+
+
+                int elevationResultSize = Marshal.SizeOf((int)elevationResult);
+
+                uint returnedSize = 0;
+
+                IntPtr elevationTypePtr = Marshal.AllocHGlobal(elevationResultSize);
+
+
+
+                bool success = GetTokenInformation(tokenHandle, TOKEN_INFORMATION_CLASS.TokenElevationType, 
+elevationTypePtr, (uint)elevationResultSize, out returnedSize);
+
+                if (success)
+
+                {
+
+                    elevationResult = (TOKEN_ELEVATION_TYPE)Marshal.ReadInt32(elevationTypePtr);
+
+                    string output = (elevationResult.ToString() + " and UAC is enabled");
+
+                    return output;
+
+                }
+
+                else
+
+                {
+
+                    throw new ApplicationException("Unable to determine the current elevation.");
+
+                    
+
+                }
+
+        }
+
+        else { return "UAC IS OFF FIRE AWAY"; }
+
+    }
+
+}] to parameter [TypeDefinition]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [using Microsoft.Win32;
+
+using System;
+
+using System.Diagnostics;
+
+using System.Runtime.InteropServices;
+
+using System.Security.Principal;
+
+
+
+public static class UacPoll
+
+{
+
+    private const string uacRegistryKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+
+    private const string uacRegistryValue = "EnableLUA";
+
+
+
+    private static uint STANDARD_RIGHTS_READ = 0x00020000;
+
+    private static uint TOKEN_QUERY = 0x0008;
+
+    private static uint TOKEN_READ = (STANDARD_RIGHTS_READ | TOKEN_QUERY);
+
+
+
+    [DllImport("advapi32.dll", SetLastError = true)]
+
+    [return: MarshalAs(UnmanagedType.Bool)]
+
+    static extern bool OpenProcessToken(IntPtr ProcessHandle, UInt32 DesiredAccess, out IntPtr TokenHandle);
+
+
+
+    [DllImport("advapi32.dll", SetLastError = true)]
+
+    public static extern bool GetTokenInformation(IntPtr TokenHandle, TOKEN_INFORMATION_CLASS TokenInformationClass, 
+IntPtr TokenInformation, uint TokenInformationLength, out uint ReturnLength);
+
+
+
+    public enum TOKEN_INFORMATION_CLASS
+
+    {
+
+        TokenUser = 1,
+
+        TokenGroups,
+
+        TokenPrivileges,
+
+        TokenOwner,
+
+        TokenPrimaryGroup,
+
+        TokenDefaultDacl,
+
+        TokenSource,
+
+        TokenType,
+
+        TokenImpersonationLevel,
+
+        TokenStatistics,
+
+        TokenRestrictedSids,
+
+        TokenSessionId,
+
+        TokenGroupsAndPrivileges,
+
+        TokenSessionReference,
+
+        TokenSandBoxInert,
+
+        TokenAuditPolicy,
+
+        TokenOrigin,
+
+        TokenElevationType,
+
+        TokenLinkedToken,
+
+        TokenElevation,
+
+        TokenHasRestrictions,
+
+        TokenAccessInformation,
+
+        TokenVirtualizationAllowed,
+
+        TokenVirtualizationEnabled,
+
+        TokenIntegrityLevel,
+
+        TokenUIAccess,
+
+        TokenMandatoryPolicy,
+
+        TokenLogonSid,
+
+        MaxTokenInfoClass
+
+    }
+
+
+
+    public enum TOKEN_ELEVATION_TYPE
+
+    {
+
+        TokenElevationTypeDefault = 1,
+
+        TokenElevationTypeFull,
+
+        TokenElevationTypeLimited
+
+    }
+
+
+
+    public static bool IsUacEnabled
+
+    {
+
+        get
+
+        {
+
+            RegistryKey uacKey = Registry.LocalMachine.OpenSubKey(uacRegistryKey, false);
+
+            bool result = uacKey.GetValue(uacRegistryValue).Equals(1);
+
+            return result;
+
+        }
+
+    }
+
+
+
+    public static string IsProcessElevated()
+
+    {
+
+        if (IsUacEnabled)
+
+            {
+
+                IntPtr tokenHandle;
+
+                if (!OpenProcessToken(Process.GetCurrentProcess().Handle, TOKEN_READ, out tokenHandle))
+
+                {
+
+                    throw new ApplicationException("Could not get process token.  Win32 Error Code: " + 
+Marshal.GetLastWin32Error());
+
+                }
+
+
+
+                TOKEN_ELEVATION_TYPE elevationResult = TOKEN_ELEVATION_TYPE.TokenElevationTypeDefault;
+
+
+
+                int elevationResultSize = Marshal.SizeOf((int)elevationResult);
+
+                uint returnedSize = 0;
+
+                IntPtr elevationTypePtr = Marshal.AllocHGlobal(elevationResultSize);
+
+
+
+                bool success = GetTokenInformation(tokenHandle, TOKEN_INFORMATION_CLASS.TokenElevationType, 
+elevationTypePtr, (uint)elevationResultSize, out returnedSize);
+
+                if (success)
+
+                {
+
+                    elevationResult = (TOKEN_ELEVATION_TYPE)Marshal.ReadInt32(elevationTypePtr);
+
+                    string output = (elevationResult.ToString() + " and UAC is enabled");
+
+                    return output;
+
+                }
+
+                else
+
+                {
+
+                    throw new ApplicationException("Unable to determine the current elevation.");
+
+                    
+
+                }
+
+        }
+
+        else { return "UAC IS OFF FIRE AWAY"; }
+
+    }
+
+}] to param [TypeDefinition] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [CSharp] to parameter [Language]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [Microsoft.PowerShell.Commands.Language]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+Microsoft.PowerShell.Commands.Language
+DEBUG: ParameterBinding Information: 0 :             CONVERT arg type to param type using LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :             CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [CSharp]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [CSharp] to param [Language] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-17 18:00:59
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4328 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:59
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:59
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:01:00
+
+*RESUMED the spwaned-powershell-process 4328
+
+Time-Tracker 2023-07-17 18:01:00
+PS C:\malware> spawned_psh_process -- Ended before 1 hr ; with NO exception raised
