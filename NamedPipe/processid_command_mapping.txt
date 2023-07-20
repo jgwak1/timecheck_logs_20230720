@@ -1,0 +1,118 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {C:\Users\puma-4\Downloads\PoshC2-master\PoshC2-master\resources\modules\NamedPipe.ps1;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Core] to parameter [AssemblyName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter AssemblyName: argument type [String],
+ parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [AssemblyName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-17 18:00:40
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4352 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:40
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:40
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:41
+
+*RESUMED the spwaned-powershell-process 4352
+
+Time-Tracker 2023-07-17 18:00:41
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-Null]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-Null]
+Time-Tracker 2023-07-17 18:00:45
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-Null]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.PowerShellAsyncResult]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Core] to parameter [AssemblyName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter AssemblyName: argument type [String],
+ parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [AssemblyName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-17 18:00:46
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4352 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:46
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:46
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:47
+
+*RESUMED the spwaned-powershell-process 4352
+
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.IO.Pipes.PipeSecurity] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.IO.Pipes.PipeSecurity] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:47
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4352 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:47
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:47
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:48
+
+*RESUMED the spwaned-powershell-process 4352
+
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.IO.Pipes.PipeAccessRule] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.IO.Pipes.PipeAccessRule] to param [TypeName] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ArgumentList]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised
+Time-Tracker 2023-07-17 18:00:48
