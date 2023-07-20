@@ -1,0 +1,1268 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\nishang-master\nishang-master\Backdoors\Set-RemoteWMI.ps1"; Set-RemoteWMI -UserName "puma-4" –Verbose;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Set-RemoteWMI]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [puma-4] to parameter [UserName]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: puma-4
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [puma-4] to param [UserName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Set-RemoteWMI]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [–Verbose] to parameter [ComputerName]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: –Verbose
+DEBUG: ParameterBinding Information: 0 :         BIND arg [–Verbose] to param [ComputerName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Set-RemoteWMI]
+Time-Tracker 2023-07-17 17:59:24
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Management.Automation.PSCredential] to parameter 
+[Credential]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.CredentialAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.PSCredential
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.PSCredential
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.PSCredential]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSCredential] to param 
+[Credential] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [root] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: root
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [root] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [NotAllNamespaces]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [NotAllNamespaces] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Remove]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Remove] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:25
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:25
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:26
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Security.Principal.WindowsPrincipal] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Security.Principal.WindowsPrincipal] to param [TypeName]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security.Principal.WindowsIdentity] to parameter 
+[ArgumentList]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter ArgumentList: argument type 
+[WindowsIdentity], parameter type [System.Object[]], collection type Array, element type [System.Object], no 
+coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type WindowsIdentity is not IList, treating this as 
+scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type WindowsIdentity to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:26
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:26
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:27
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 17:59:27
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security.Principal.NTAccount] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Security.Principal.NTAccount] to param [TypeName]
+ SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [puma-4] to parameter [ArgumentList]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter ArgumentList: argument type [String],
+ parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 17:59:28
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:28
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:28
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:29
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 17:59:29
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-17 17:59:30
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [root\default] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [root\default] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [StdRegProv] to parameter [Class]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [StdRegProv] to param [Class] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [List]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [List] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [–Verbose] to parameter [ComputerName]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter ComputerName: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [ComputerName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSCredential] to parameter 
+[Credential]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[System.Management.Automation.CredentialAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 
+System.Management.Automation.PSCredential
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSCredential]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Management.Automation.PSCredential] to param 
+[Credential] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 17:59:31
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\default. The 
+RPC server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\default. 
+The RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :             BIND arg 
+[Microsoft.PowerShell.Commands.Internal.Format.ConsoleLineOutput] to parameter [LineOutput]
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 BIND arg 
+[Microsoft.PowerShell.Commands.Internal.Format.ConsoleLineOutput] to param [LineOutput] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Out-LineOutput]
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\default. The 
+RPC server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\default. 
+The RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Format-Default]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\default. The 
+RPC server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\default. 
+The RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:37
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:37
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [root] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [root] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [__SystemSecurity] to parameter [Class]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [__SystemSecurity] to param [Class] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [List]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [List] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [–Verbose] to parameter [ComputerName]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter ComputerName: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [ComputerName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSCredential] to parameter 
+[Credential]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[System.Management.Automation.CredentialAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 
+System.Management.Automation.PSCredential
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSCredential]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Management.Automation.PSCredential] to param 
+[Credential] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 17:59:38
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:42
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:42
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root. The RPC 
+server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:43
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:43
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:43
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:44
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:44
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [root\cimv2] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [root\cimv2] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Win32_SecurityDescriptorHelper] to parameter [Class]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Win32_SecurityDescriptorHelper] to param [Class] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [List]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [List] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [–Verbose] to parameter [ComputerName]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter ComputerName: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [ComputerName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.PSCredential] to parameter 
+[Credential]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[System.Management.Automation.CredentialAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 
+System.Management.Automation.PSCredential
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.PSCredential]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Management.Automation.PSCredential] to param 
+[Credential] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-WmiObject]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-WmiObject]
+Time-Tracker 2023-07-17 17:59:45
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\cimv2. The RPC
+ server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\cimv2. The
+ RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:48
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\cimv2. The RPC
+ server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\cimv2. The
+ RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:48
+DEBUG: ParameterBinding Information: 0 :         BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :             PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :             RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :             Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Could not get objects from namespace root\cimv2. The RPC
+ server is unavailable.
+
+] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [Could not get objects from namespace root\cimv2. The
+ RPC server is unavailable.
+
+] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:49
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:49
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:49
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:50
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :         BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :                 Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                     result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :                 BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:50
+DEBUG: ParameterBinding Information: 0 :         CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :         CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:50
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:51
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:51
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:51
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:52
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:52
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:52
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:53
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:53
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to parameter 
+[InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Method invocation failed because 
+[System.Management.Automation.PSInternalMemberSet] does not contain a method named 'InvokeMethod'.] to param 
+[InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:53
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:53
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:54
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:54
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:54
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Existing ACL for namespace root is ] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Existing ACL for namespace root is ] to param [Message] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:57
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:57
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:58
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [You cannot call a method on a null-valued expression.] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [You cannot call a method on a null-valued expression.] 
+to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Existing ACL for DCOM is ] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Existing ACL for DCOM is ] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:00
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:00
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:01
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 18:00:01
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 18:00:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 18:00:01
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:03
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:03
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [New ACL for namespace root is ] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [New ACL for namespace root is ] to param [Message] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:03
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3424 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:03
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:03
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:04
+
+*RESUMED the spwaned-powershell-process 3424
+
+Time-Tracker 2023-07-17 18:00:04
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 18:00:04
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [out-lineoutput]
+Time-Tracker 2023-07-17 18:00:05
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Format-Default]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [The property 'SDDL' cannot be found on this object. Verify 
+that the property exists and can be set.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [The property 'SDDL' cannot be found on this object. 
+Verify that the property exists and can be set.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [format-default]
+Time-Tracker 2023-07-17 18:00:05
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:05
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [1] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 1.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [1.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+spawned_psh_process -- Timed-out after waiting 7200 s

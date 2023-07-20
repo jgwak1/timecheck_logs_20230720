@@ -1,0 +1,674 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PowerShell-Scripts\Credential_Dumping\ShadowDump.ps1"; Invoke-ShadowDump -path "C:\";} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Invoke-ShadowDump]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [C:\] to parameter [path]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: C:\
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\] to param [path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Invoke-ShadowDump]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Invoke-ShadowDump]
+Time-Tracker 2023-07-17 18:04:36
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:36
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:36
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:37
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:37
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-17 18:04:38
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [New-Item]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\\ShadowDump] to parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Directory] to parameter [ItemType]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Directory] to param [ItemType] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Item]
+DEBUG: ParameterBinding Information: 0 :     BIND cmd line args to DYNAMIC parameters.
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Item]
+Time-Tracker 2023-07-17 18:04:39
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:39
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:39
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:40
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:40
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Test-Path]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\] to parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND cmd line args to DYNAMIC parameters.
+DEBUG: ParameterBinding Information: 0 :         DYNAMIC parameter object: 
+[Microsoft.PowerShell.Commands.FileSystemItemProviderDynamicParameters]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Test-Path]
+Time-Tracker 2023-07-17 18:04:40
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:40
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:40
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:41
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:41
+DEBUG: ParameterBinding Information: 0 :         BIND arg [yellow] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: 
+[Yellow]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Yellow] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [NoNewline]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [NoNewline] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:04:42
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+
+[!] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: '[!] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:42
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:42
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:43
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:43
+DEBUG: ParameterBinding Information: 0 :         BIND arg [green] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [Green]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Green] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:04:43
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+System is a vulnerable version of Windows
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:43
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:43
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:44
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:44
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-Service]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [vss] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-Service]
+Time-Tracker 2023-07-17 18:04:44
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:45
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:45
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:46
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:46
+DEBUG: ParameterBinding Information: 0 :         BIND arg [yellow] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: 
+[Yellow]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Yellow] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [NoNewline]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [NoNewline] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:04:47
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+[!] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: '[!] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:47
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:47
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:48
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:48
+DEBUG: ParameterBinding Information: 0 :         BIND arg [green] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [Green]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Green] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:04:48
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+ShadowCopy service is running, system may be vulnerable
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:48
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:48
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:49
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:49
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [ListAvailable]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [ListAvailable] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\ConfigDefender\ConfigDefender.psd1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-Module]
+Time-Tracker 2023-07-17 18:04:50
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-Module]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [ListAvailable]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [ListAvailable] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\ConfigDefenderPerformance\ConfigDefenderPerformance.psd1] to 
+parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-Module]
+Time-Tracker 2023-07-17 18:04:52
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Security\Microsoft.PowerShell.Security.psd1] 
+to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-17 18:04:53
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-Acl]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-Acl]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [C:\windows\system32\config\sam] to parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-Acl]
+Time-Tracker 2023-07-17 18:04:53
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:53
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:53
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:54
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:54
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [Match]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [Match] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [IdentityReference] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [IdentityReference] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [BUILTIN\\Users] to parameter [Value]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [BUILTIN\\Users] to param [Value] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:04:55
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Select-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [filesystemrights] to parameter [ExpandProperty]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [filesystemrights] to param [ExpandProperty] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Select-Object]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Select-Object]
+Time-Tracker 2023-07-17 18:04:55
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Select-String]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Read] to parameter [Pattern]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Pattern: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Pattern] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Select-String]
+Time-Tracker 2023-07-17 18:04:55
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = 
+[System.Security.AccessControl.FileSystemAccessRule]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security.AccessControl.FileSystemAccessRule] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Security.AccessControl.FileSystemAccessRule] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:04:55
+DEBUG: ParameterBinding Information: 0 :     BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :         PIPELINE object TYPE = 
+[System.Security.AccessControl.FileSystemAccessRule]
+DEBUG: ParameterBinding Information: 0 :         RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :         Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Security.AccessControl.FileSystemAccessRule] to 
+parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Security.AccessControl.FileSystemAccessRule] to 
+param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:04:56
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:56
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:56
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:57
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:57
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:57
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:57
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:58
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:58
+DEBUG: ParameterBinding Information: 0 :         BIND arg [yellow] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: 
+[Yellow]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Yellow] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [NoNewline]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [NoNewline] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:04:58
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+[-] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: '[-] DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:04:58
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:04:58
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:04:59
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:04:59
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Red] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [Red]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Red] to param [ForegroundColor] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Write-Host]
+DEBUG: ParameterBinding Information: 0 :     BIND REMAININGARGUMENTS cmd line args to param: [Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+parameter [Object]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Collections.Generic.List`1[System.Object]] to 
+param [Object] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Write-Host]
+Time-Tracker 2023-07-17 18:05:00
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+SAM Permissions Are set correctly
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2860 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:05:00
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:05:00
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:05:01
+
+*RESUMED the spwaned-powershell-process 2860
+
+Time-Tracker 2023-07-17 18:05:01
+DEBUG: ParameterBinding Information: 0 :         BIND arg [yellow] to parameter [ForegroundColor]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.ConsoleColor]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.ConsoleColor
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: 
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

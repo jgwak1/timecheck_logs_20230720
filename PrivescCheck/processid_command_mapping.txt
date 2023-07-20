@@ -1,0 +1,556 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PoshC2-master\PoshC2-master\resources\modules\PrivescCheck.ps1";Convert-ServiceTypeToString -ServiceType "16";} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.ArrayList] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.ArrayList] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:10
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:10
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:10
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:11
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:11
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.ArrayList] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.ArrayList] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:11
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:12
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:12
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:13
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:13
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.ArrayList] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.ArrayList] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:13
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:13
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:13
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:14
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Collections.ArrayList] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Collections.ArrayList] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:14
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:14
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:15
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:15
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.CodeDom.Compiler.CompilerParameters] to parameter 
+[TypeName]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.CodeDom.Compiler.CompilerParameters] to param 
+[TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:16
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:16
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:16
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:17
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:17
+DEBUG: ParameterBinding Information: 0 :     BIND arg [private const Int32 ANYSIZE_ARRAY = 1;
+
+[System.FlagsAttribute]
+public enum ServiceAccessFlags : uint
+{
+    QueryConfig = 1,
+    ChangeConfig = 2,
+    QueryStatus = 4,
+    EnumerateDependents = 8,
+    Start = 16,
+    Stop = 32,
+    PauseContinue = 64,
+    Interrogate = 128,
+    UserDefinedControl = 256,
+    Delete = 65536,
+    ReadControl = 131072,
+    WriteDac = 262144,
+    WriteOwner = 524288,
+    Synchronize = 1048576,
+    AccessSystemSecurity = 16777216,
+    GenericAll = 268435456,
+    GenericExecute = 536870912,
+    GenericWrite = 1073741824,
+    GenericRead = 2147483648
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct LUID {
+   public UInt32 LowPart;
+   public Int32 HighPart;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct SID_AND_ATTRIBUTES {
+    public IntPtr Sid;
+    public int Attributes;
+}
+
+[StructLayout(LayoutKind.Sequential, Pack = 4)]
+public struct LUID_AND_ATTRIBUTES {
+   public LUID Luid;
+   public UInt32 Attributes;
+}
+
+public struct TOKEN_USER {
+    public SID_AND_ATTRIBUTES User;
+}
+
+public struct TOKEN_PRIVILEGES {
+    public int PrivilegeCount;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst=ANYSIZE_ARRAY)]
+    public LUID_AND_ATTRIBUTES [] Privileges;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_TCPROW_OWNER_PID
+{
+    public uint state;
+    public uint localAddr;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] localPort;
+    public uint remoteAddr;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] remotePort;
+    public uint owningPid;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_UDPROW_OWNER_PID
+{
+    public uint localAddr;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] localPort;
+    public uint owningPid;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_TCP6ROW_OWNER_PID
+{
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)]
+    public byte[] localAddr;
+    public uint localScopeId;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] localPort;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)]
+    public byte[] remoteAddr;
+    public uint remoteScopeId;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] remotePort;
+    public uint state;
+    public uint owningPid;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_UDP6ROW_OWNER_PID
+{
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 16)]
+    public byte[] localAddr;
+    public uint localScopeId;
+    [MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
+    public byte[] localPort;
+    public uint owningPid;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_TCPTABLE_OWNER_PID
+{
+    public uint dwNumEntries;
+    [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.Struct, SizeConst = 1)]
+    public MIB_TCPROW_OWNER_PID[] table;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_UDPTABLE_OWNER_PID
+{
+    public uint dwNumEntries;
+    [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.Struct, SizeConst = 1)]
+    public MIB_UDPROW_OWNER_PID[] table;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_TCP6TABLE_OWNER_PID
+{
+    public uint dwNumEntries;
+    [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.Struct, SizeConst = 1)]
+    public MIB_TCP6ROW_OWNER_PID[] table;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct MIB_UDP6TABLE_OWNER_PID
+{
+    public uint dwNumEntries;
+    [MarshalAs(UnmanagedType.ByValArray, ArraySubType = UnmanagedType.Struct, SizeConst = 1)]
+    public MIB_UDP6ROW_OWNER_PID[] table;
+
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FILETIME
+{
+    public uint dwLowDateTime;
+    public uint dwHighDateTime;
+}
+
+[StructLayout(LayoutKind.Sequential, CharSet=CharSet.Unicode)]
+public struct CREDENTIAL
+{
+    public uint Flags;
+    public uint Type;
+    public string TargetName;
+    public string Comment;
+    public FILETIME LastWritten;
+    public uint CredentialBlobSize;
+    public IntPtr CredentialBlob;
+    public uint Persist;
+    public uint AttributeCount;
+    public IntPtr Attributes;
+    public string TargetAlias;
+    public string UserName;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct UNICODE_STRING
+{
+   public ushort Length;
+   public ushort MaximumLength;
+   public IntPtr Buffer;
+}
+
+[StructLayout(LayoutKind.Sequential, CharSet=CharSet.Unicode)]
+public struct VAULT_ITEM_7
+{
+    public Guid SchemaId;
+    public string FriendlyName;
+    public IntPtr Resource;
+    public IntPtr Identity;
+    public IntPtr Authenticator;
+    public UInt64 LastWritten;
+    public UInt32 Flags;
+    public UInt32 PropertiesCount;
+    public IntPtr Properties;
+}
+
+[StructLayout(LayoutKind.Sequential, CharSet=CharSet.Unicode)]
+public struct VAULT_ITEM_8
+{
+    public Guid SchemaId;
+    public string FriendlyName;
+    public IntPtr Resource;
+    public IntPtr Identity;
+    public IntPtr Authenticator;
+    public IntPtr PackageSid;
+    public UInt64 LastWritten;
+    public UInt32 Flags;
+    public UInt32 PropertiesCount;
+    public IntPtr Properties;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct VAULT_ITEM_DATA_HEADER
+{
+    public UInt32 SchemaElementId;
+    public UInt32 Unknown1;
+    public UInt32 Type;
+    public UInt32 Unknown2;
+}
+
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct WLAN_INTERFACE_INFO
+{
+    public Guid InterfaceGuid;
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 256)]
+    public string strInterfaceDescription;
+    public uint isState; // WLAN_INTERFACE_STATE
+}
+
+[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+public struct WLAN_PROFILE_INFO
+{
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 256)]
+    public string strProfileName;
+    public uint dwFlags;
+}
+
+[DllImport("advapi32.dll", SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool QueryServiceObjectSecurity(IntPtr serviceHandle, System.Security.AccessControl.SecurityInfos 
+secInfo, byte[] lpSecDesrBuf, uint bufSize, out uint bufSizeNeeded);
+
+[DllImport("advapi32.dll", SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool CloseServiceHandle(IntPtr hSCObject);
+
+[DllImport("advapi32.dll", SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool OpenProcessToken(IntPtr ProcessHandle, UInt32 DesiredAccess, out IntPtr TokenHandle);
+
+[DllImport("advapi32.dll", SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool GetTokenInformation(IntPtr TokenHandle, UInt32 TokenInformationClass, IntPtr 
+TokenInformation, UInt32 TokenInformationLength, out UInt32 ReturnLength);
+
+[DllImport("advapi32.dll", CharSet=CharSet.Auto, SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool LookupAccountSid(string lpSystemName, IntPtr Sid, System.Text.StringBuilder lpName, ref uint 
+cchName, System.Text.StringBuilder ReferencedDomainName, ref uint cchReferencedDomainName, out int peUse);
+
+[DllImport("advapi32.dll", CharSet=CharSet.Auto, SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool LookupPrivilegeName(string lpSystemName, IntPtr lpLuid, System.Text.StringBuilder lpName, ref
+ int cchName );
+
+[DllImport("advapi32.dll", CharSet=CharSet.Unicode, SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool CredEnumerate(IntPtr Filter, UInt32 Flags, out UInt32 Count, out IntPtr Credentials);
+
+[DllImport("advapi32.dll")]
+public static extern void CredFree(IntPtr Buffer);
+
+[DllImport("advapi32.dll", SetLastError=false)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool IsTextUnicode(IntPtr buf, UInt32 len, ref UInt32 opt);
+
+[DllImport("kernel32.dll", SetLastError=true)]
+public static extern IntPtr GetCurrentProcess();
+
+[DllImport("kernel32.dll", SetLastError=true)]
+public static extern IntPtr OpenProcess(uint processAccess, bool bInheritHandle, int processId);
+
+[DllImport("kernel32.dll", SetLastError=true)]
+[return: MarshalAs(UnmanagedType.Bool)]
+public static extern bool CloseHandle(IntPtr hObject);
+
+[DllImport("kernel32.dll")]
+public static extern UInt64 GetTickCount64();
+
+[DllImport("kernel32.dll", CharSet=CharSet.Auto, SetLastError=true)]
+public static extern uint GetFirmwareEnvironmentVariable(string lpName, string lpGuid, IntPtr pBuffer, uint nSize);
+
+[DllImport("kernel32.dll", SetLastError=true)]
+public static extern bool GetFirmwareType(ref uint FirmwareType);
+
+[DllImport("iphlpapi.dll", SetLastError=true)]
+public static extern uint GetExtendedTcpTable(IntPtr pTcpTable, ref int pdwSize, bool bOrder, int ulAf, uint 
+TableClass, uint Reserved);
+
+[DllImport("iphlpapi.dll", SetLastError=true)]
+public static extern uint GetExtendedUdpTable(IntPtr pUdpTable, ref int pdwSize, bool bOrder, int ulAf, uint 
+TableClass, uint Reserved);
+
+[DllImport("vaultcli.dll", SetLastError=false)]
+public static extern uint VaultEnumerateVaults(uint dwFlags, out int VaultsCount, out IntPtr ppVaultGuids);
+
+[DllImport("vaultcli.dll", SetLastError=false)]
+public static extern uint VaultOpenVault(IntPtr pVaultId, uint dwFlags, out IntPtr pVaultHandle);
+
+[DllImport("vaultcli.dll", SetLastError=false)]
+public static extern uint VaultEnumerateItems(IntPtr pVaultHandle, uint dwFlags, out int ItemsCount, out IntPtr 
+ppItems);
+
+[DllImport("vaultcli.dll", SetLastError=false, EntryPoint="VaultGetItem")]
+public static extern uint VaultGetItem7(IntPtr pVaultHandle, ref Guid guidSchemaId, IntPtr pResource, IntPtr pIdentity,
+ IntPtr pUnknown, uint iUnknown, out IntPtr pItem);
+
+[DllImport("vaultcli.dll", SetLastError=false, EntryPoint="VaultGetItem")]
+public static extern uint VaultGetItem8(IntPtr pVaultHandle, ref Guid guidSchemaId, IntPtr pResource, IntPtr pIdentity,
+ IntPtr pPackageSid, IntPtr pUnknown, uint iUnknown, out IntPtr pItem);
+
+[DllImport("vaultcli.dll", SetLastError=false)]
+public static extern uint VaultFree(IntPtr pVaultItem);
+
+[DllImport("vaultcli.dll", SetLastError=false)]
+public static extern uint VaultCloseVault(ref IntPtr pVaultHandle);
+
+[DllImport("Wlanapi.dll")]
+public static extern uint WlanOpenHandle(uint dwClientVersion, IntPtr pReserved, out uint pdwNegotiatedVersion, out 
+IntPtr hClientHandle);
+
+[DllImport("Wlanapi.dll")]
+public static extern uint WlanCloseHandle(IntPtr hClientHandle, IntPtr pReserved);
+
+[DllImport("Wlanapi.dll")]
+public static extern uint WlanEnumInterfaces(IntPtr hClientHandle, IntPtr pReserved, ref IntPtr ppInterfaceList);
+
+[DllImport("Wlanapi.dll")]
+public static extern void WlanFreeMemory(IntPtr pMemory);
+
+[DllImport("Wlanapi.dll")]
+public static extern uint WlanGetProfileList(IntPtr hClientHandle, [MarshalAs(UnmanagedType.LPStruct)]Guid 
+interfaceGuid, IntPtr pReserved, out IntPtr ppProfileList);
+
+[DllImport("Wlanapi.dll")]
+public static extern uint WlanGetProfile(IntPtr clientHandle, [MarshalAs(UnmanagedType.LPStruct)] Guid interfaceGuid, 
+[MarshalAs(UnmanagedType.LPWStr)] string profileName, IntPtr pReserved, [MarshalAs(UnmanagedType.LPWStr)] out string 
+profileXml, ref uint flags, out uint pdwGrantedAccess);] to parameter [MemberDefinition]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :             ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter MemberDefinition: argument type 
+[String], parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.String] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.String[]] to param [MemberDefinition] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Win32] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Win32] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [PrivescCheck] to parameter [Namespace]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [PrivescCheck] to param [Namespace] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [CSharp] to parameter [Language]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [Microsoft.PowerShell.Commands.Language]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from System.String to 
+Microsoft.PowerShell.Commands.Language
+DEBUG: ParameterBinding Information: 0 :             CONVERT arg type to param type using LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :             CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [CSharp]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [CSharp] to param [Language] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.CodeDom.Compiler.CompilerParameters] to parameter 
+[CompilerParameters]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.CodeDom.Compiler.CompilerParameters]
+DEBUG: ParameterBinding Information: 0 :             Trying to convert argument value from 
+System.Management.Automation.PSObject to System.CodeDom.Compiler.CompilerParameters
+DEBUG: ParameterBinding Information: 0 :             CONVERT arg type to param type using LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :             CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: 
+[System.CodeDom.Compiler.CompilerParameters]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.CodeDom.Compiler.CompilerParameters] to param 
+[CompilerParameters] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Add-Type]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Add-Type]
+Time-Tracker 2023-07-17 18:00:29
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:29
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:29
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:30
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:30
+DEBUG: ParameterBinding Information: 0 :     BIND arg [16] to parameter [ServiceType]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 16
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [16] to param [ServiceType] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Convert-ServiceTypeToString]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Convert-ServiceTypeToString]
+Time-Tracker 2023-07-17 18:00:48
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 3332 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:48
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:48
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:49
+
+*RESUMED the spwaned-powershell-process 3332
+
+Time-Tracker 2023-07-17 18:00:49
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [ForEach-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ 
+        if ( $_.value -band $ServiceType ) 
+        {
+            $_.name
+        }
+    ] to parameter [Process]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter Process: argument type [ScriptBlock],
+ parameter type [System.Management.Automation.ScriptBlock[]], collection type Array, element type 
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

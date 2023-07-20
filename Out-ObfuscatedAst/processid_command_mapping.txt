@@ -1,0 +1,2400 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\Invoke-Obfuscation-master\Invoke-Obfuscation-master\Out-ObfuscatedAst.ps1";Out-ObfuscatedAst "Write-Host example";} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 17:59:23
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Get-Ast]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-Ast]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-Ast]
+Time-Tracker 2023-07-17 17:59:24
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:25
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:25
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:26
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.ScriptBlockAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedScriptBlockAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedScriptBlockAst]
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedScriptBlockAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedScriptBlockAst]] to param [Message] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:26
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:26
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:26
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:27
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:27
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 17:59:28
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:31
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:31
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:31
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:31
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:32
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:32
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.NamedBlockAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:32
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:32
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:32
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:33
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:33
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartOffset ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Property: argument type [ScriptBlock], 
+parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 17:59:33
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.NamedBlockAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 17:59:34
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:34
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:34
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:35
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 17:59:35
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:36
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:36
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:36
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:37
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:37
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 17:59:37
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.NamedBlockAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptString] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptString] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [AbstractSyntaxTree] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptUri] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptUri] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptBlock] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptBlock] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 17:59:38
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedNamedBlockAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.NamedBlockAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedNamedBlockAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedNamedBlockAst]
+Time-Tracker 2023-07-17 17:59:39
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedNamedBlockAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedNamedBlockAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:39
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:39
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:39
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:40
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:40
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 17:59:41
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:41
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:41
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:41
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:42
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:42
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 17:59:42
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:45
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartOffset ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Property: argument type [ScriptBlock], 
+parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 17:59:46
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:46
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:46
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:46
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:47
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:47
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.PipelineAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:47
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.PipelineAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 17:59:47
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:47
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:47
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:48
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:48
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:48
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:48
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:49
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:49
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 17:59:49
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.PipelineAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptString] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptString] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [AbstractSyntaxTree] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptUri] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptUri] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptBlock] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptBlock] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 17:59:51
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedPipelineAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.PipelineAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedPipelineAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedPipelineAst]
+Time-Tracker 2023-07-17 17:59:52
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedPipelineAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedPipelineAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:52
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:52
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:52
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:53
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:53
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 17:59:54
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:54
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:54
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:54
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 17:59:55
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartOffset ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Property: argument type [ScriptBlock], 
+parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:59
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:59
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:00
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.CommandAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.CommandAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:00
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:00
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:01
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:01
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:01
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:01
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:02
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.Language.CommandAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptString] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptString] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [AbstractSyntaxTree] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptUri] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptUri] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptBlock] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [ScriptBlock] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 18:00:04
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedCommandAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.CommandAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedCommandAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedCommandAst]
+Time-Tracker 2023-07-17 18:00:04
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedCommandAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedCommandAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:05
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:05
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:05
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:06
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:06
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:06
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:07
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:07
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 18:00:08
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:08
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:08
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:08
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:09
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:09
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 18:00:09
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:13
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartOffset ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Property: argument type [ScriptBlock], 
+parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 18:00:13
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:13
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:13
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:13
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:14
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:14
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 18:00:15
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:15
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:15
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:16
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:16
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:16
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:16
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:17
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:17
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 18:00:17
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptString] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptBlock] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptPath]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptPath] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [ScriptUri] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptString] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [ScriptString] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [AbstractSyntaxTree] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptUri] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [ScriptUri] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptBlock] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [ScriptBlock] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 18:00:19
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedStringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedStringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet 
+Time-Tracker 2023-07-17 18:00:19
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedStringConstantExpressionAst]] to parameter 
+[Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedStringConstantExpressionAst]] to param 
+[Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:20
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:20
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:20
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:21
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:21
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 18:00:21
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:22
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:22
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:22
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:23
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:23
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Write-Host] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Write-Host
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Write-Host] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 18:00:23
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 18:00:26
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Sort-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartOffset ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter Property: argument type [ScriptBlock], 
+parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type ScriptBlock is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :         Adding scalar element of type ScriptBlock to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [Property] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Sort-Object]
+Time-Tracker 2023-07-17 18:00:27
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Get-AstChildren]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Get-AstChildren]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:27
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:27
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:27
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:28
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:28
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:28
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:28
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:29
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:29
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:29
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:29
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:30
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:30
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-ObfuscatedAst]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptString] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [ScriptString]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [ScriptString] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [AbstractSyntaxTree] PIPELINE INPUT ValueFromPipeline NO 
+COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptUri] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [ScriptUri]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [ScriptUri] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     Parameter [ScriptBlock] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [ScriptBlock]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [ScriptBlock] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedAst]
+Time-Tracker 2023-07-17 18:00:31
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-ObfuscatedStringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to 
+[System.Management.Automation.Language.StringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedStringConstantExpressionAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet 
+Time-Tracker 2023-07-17 18:00:31
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedStringConstantExpressionAst]] to parameter 
+[Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedStringConstantExpressionAst]] to param 
+[Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:32
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:32
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:32
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:33
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:33
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Type[]] to parameter [AstTypesToObfuscate]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Type[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Type[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [AstTypesToObfuscate] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-ObfuscatedChildrenAst]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-ObfuscatedChildrenAst]
+Time-Tracker 2023-07-17 18:00:33
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ChildrenAsts]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+System.Management.Automation.Language.Ast[]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast[]]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation.Language.Ast[]] to param 
+[ChildrenAsts] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [DisableNestedObfuscation]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [DisableNestedObfuscation] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Write-Verbose]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [[Out-ObfuscatedChildrenAst]] to parameter [Message]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [[Out-ObfuscatedChildrenAst]] to param [Message] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Write-Verbose]
+Time-Tracker 2023-07-17 18:00:34
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 4028 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:34
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:34
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:35
+
+*RESUMED the spwaned-powershell-process 4028
+
+Time-Tracker 2023-07-17 18:00:35
+DEBUG: ParameterBinding Information: 0 :     BIND arg [example] to parameter [AbstractSyntaxTree]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: example
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.Language.Ast]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [example] to param [AbstractSyntaxTree] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Get-AstChildren]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Get-AstChildren]
+Time-Tracker 2023-07-17 18:00:35
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+'EmptyScriptPosition' ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.Extent.StartScriptPosition.GetType().Name -ne 
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised
