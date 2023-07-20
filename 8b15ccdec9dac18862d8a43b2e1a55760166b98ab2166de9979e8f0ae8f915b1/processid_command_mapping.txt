@@ -1,0 +1,548 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {C:\Users\puma-4\Downloads\Malware_Bazaar\Malware_Bazaar\8b15ccdec9dac18862d8a43b2e1a55760166b98ab2166de9979e8f0ae8f915b1.ps1} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [2] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 2.0
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [2.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-17 17:59:51
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 : BIND arg [kernel32.dll] to parameter [var_module]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [kernel32.dll] to param [var_module] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND arg [VirtualAlloc] to parameter [var_procedure]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [VirtualAlloc] to param [var_procedure] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [FilterScript]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [FilterScript] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 :     BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to parameter [Property]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ $_.GlobalAssemblyCache -And 
+$_.Location.Split('\\')[-1].Equals('System.dll') ] to param [Property] SKIPPED
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [mscorlib, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [mscorlib, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.ConsoleHost, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.ConsoleHost, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:55
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Core, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Core, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Management.Automation, Version=3.0.0.0, Culture=neutral, 
+PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management.Automation, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.Management.Infrastructure, Version=1.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.Management.Infrastructure, Version=1.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:56
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Management, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Management, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.DirectoryServices, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.DirectoryServices, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Xml, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Xml, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Numerics, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Numerics, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:57
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Data, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Data, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Configuration, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Configuration, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.Emit.InternalAssemblyBuilder]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, 
+Culture=neutral, PublicKeyToken=null] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0,
+ Culture=neutral, PublicKeyToken=null] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.Security, Version=3.0.0.0, Culture=neutral,
+ PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.Security, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Transactions, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Transactions, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b77a5c561934e089] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:58
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.Powershell.PSReadline, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.Powershell.PSReadline, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Microsoft.PowerShell.Commands.Utility, Version=3.0.0.0, 
+Culture=neutral, PublicKeyToken=31bf3856ad364e35] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Where-Object]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Reflection.RuntimeAssembly]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Configuration.Install, Version=4.0.0.0, Culture=neutral, 
+PublicKeyToken=b03f5f7f11d50a3a] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Configuration.Install, Version=4.0.0.0, 
+Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Where-Object]
+Time-Tracker 2023-07-17 17:59:59
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 17:59:59
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 17:59:59
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:00
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [IntPtr] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [IntPtr] to param [TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:00
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:01
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:01
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:02
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Runtime.InteropServices.HandleRef] to parameter 
+[TypeName]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Runtime.InteropServices.HandleRef] to param 
+[TypeName] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [ArgumentList]
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:02
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:02
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:02
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:03
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:03
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [func_get_delegate_type]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [var_parameters]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter var_parameters: argument type [Object[]],
+ parameter type [System.Type[]], collection type Array, element type [System.Type], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Arg is IList with 4 elements
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Type] and 4 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type System.Object[] is IList
+DEBUG: ParameterBinding Information: 0 :         Adding element of type RuntimeType to array position 0
+DEBUG: ParameterBinding Information: 0 :         Adding element of type RuntimeType to array position 1
+DEBUG: ParameterBinding Information: 0 :         Adding element of type RuntimeType to array position 2
+DEBUG: ParameterBinding Information: 0 :         Adding element of type RuntimeType to array position 3
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [var_parameters] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.IntPtr] to parameter [var_return_type]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.IntPtr
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.IntPtr] to param [var_return_type] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [func_get_delegate_type]
+Time-Tracker 2023-07-17 18:00:03
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:03
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:03
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:04
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:04
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Reflection.AssemblyName] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Reflection.AssemblyName] to param [TypeName] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ReflectedDelegate] to parameter [ArgumentList]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter ArgumentList: argument type [String],
+ parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:05
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:05
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:05
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:06
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [func_get_delegate_type]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Object[]] to parameter [var_parameters]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Object[]
+DEBUG: ParameterBinding Information: 0 :         Binding collection parameter var_parameters: argument type [Object[]],
+ parameter type [System.Type[]], collection type Array, element type [System.Type], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :         Arg is IList with 1 elements
+DEBUG: ParameterBinding Information: 0 :         Creating array with element type [System.Type] and 1 elements
+DEBUG: ParameterBinding Information: 0 :         Argument type System.Object[] is IList
+DEBUG: ParameterBinding Information: 0 :         Adding element of type RuntimeType to array position 0
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Type[]] to param [var_parameters] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [System.Void] to parameter [var_return_type]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: System.Void
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Void] to param [var_return_type] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [func_get_delegate_type]
+Time-Tracker 2023-07-17 18:00:06
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:06
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:06
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:07
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:07
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [New-Object]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [System.Reflection.AssemblyName] to parameter [TypeName]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Reflection.AssemblyName] to param [TypeName] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [ReflectedDelegate] to parameter [ArgumentList]
+DEBUG: ParameterBinding Information: 0 :             Binding collection parameter ArgumentList: argument type [String],
+ parameter type [System.Object[]], collection type Array, element type [System.Object], no coerceElementType
+DEBUG: ParameterBinding Information: 0 :             Creating array with element type [System.Object] and 1 elements
+DEBUG: ParameterBinding Information: 0 :             Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :             Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.Object[]] to param [ArgumentList] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [New-Object]
+Time-Tracker 2023-07-17 18:00:08
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 5032 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-17 18:00:08
+sleep now : for 1 seconds
+Time-Tracker 2023-07-17 18:00:08
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-17 18:00:09
+
+*RESUMED the spwaned-powershell-process 5032
+
+Time-Tracker 2023-07-17 18:00:09
+spawned_psh_process -- Timed-out after waiting 7200 s
