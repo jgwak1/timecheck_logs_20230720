@@ -1,0 +1,41 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\malware> Trace-Command -Name metadata, parameterbinding, cmdlet -Expression {. "C:\Users\puma-4\Downloads\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PT-ToolKit-f78567ce9b4701acfd6af21196b95eef44bbc9c5\PowerShell-Scripts\Defense_Evasion\Obfuscation\Invoke-PSImage.ps1";Invoke-PSImage;} -PSHost;
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Invoke-PSImage]
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Invoke-PSImage]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Invoke-PSImage]
+Time-Tracker 2023-07-17 18:04:31
+DEBUG: ParameterBinding Information: 0 :     PROMPTING for missing mandatory parameters using the host
+DEBUG: ParameterBinding Information: 0 :     ERROR: still missing mandatory parameters after PROMPTING
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-Default]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Cannot process command because of one or more missing mandatory 
+parameters: Script Out.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Cannot process command because of one or more missing 
+mandatory parameters: Script Out.] to param [InputObject] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-Default]
+Time-Tracker 2023-07-17 18:04:32
+DEBUG: ParameterBinding Information: 0 : BIND NAMED cmd line args [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Microsoft.PowerShell.Commands.Internal.Format.ConsoleLineOutput]
+ to parameter [LineOutput]
+DEBUG: ParameterBinding Information: 0 :         COERCE arg to [System.Object]
+DEBUG: ParameterBinding Information: 0 :             Parameter and arg types the same, no coercion is needed.
+DEBUG: ParameterBinding Information: 0 :         BIND arg 
+[Microsoft.PowerShell.Commands.Internal.Format.ConsoleLineOutput] to param [LineOutput] SUCCESSFUL
+DEBUG: ParameterBinding Information: 0 : BIND POSITIONAL cmd line args [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 : MANDATORY PARAMETER CHECK on cmdlet [Out-LineOutput]
+Time-Tracker 2023-07-17 18:04:32
+DEBUG: ParameterBinding Information: 0 : CALLING BeginProcessing
+DEBUG: ParameterBinding Information: 0 : BIND PIPELINE object to parameters: [Out-LineOutput]
+DEBUG: ParameterBinding Information: 0 :     PIPELINE object TYPE = [System.Management.Automation.ErrorRecord]
+DEBUG: ParameterBinding Information: 0 :     RESTORING pipeline parameter's original values
+DEBUG: ParameterBinding Information: 0 :     Parameter [InputObject] PIPELINE INPUT ValueFromPipeline NO COERCION
+DEBUG: ParameterBinding Information: 0 :     BIND arg [Cannot process command because of one or more missing mandatory 
+parameters: Script Out.] to parameter [InputObject]
+DEBUG: ParameterBinding Information: 0 :         BIND arg [Cannot process command because of one or more missing 
+spawned_psh_process -- Ended before 1 hr ; with NO exception raised
